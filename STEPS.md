@@ -14,3 +14,15 @@ Create database
 $ cd workshop-rails
 $ rake db:create db:migrate 
 ```
+
+## Step 1
+
+Create ToDo model
+```bash
+$ rails g model to_do title 
+```
+
+Migrate database
+```bash
+$ rake db:migrate
+```
