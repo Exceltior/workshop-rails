@@ -1,4 +1,4 @@
-# Tutorial Steps 
+# Workshop Steps 
 
 This file contains every workshop step. 
 
