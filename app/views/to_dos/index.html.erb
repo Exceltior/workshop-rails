@@ -1,0 +1,16 @@
+<h1>To Do Index</h1>
+
+<%= link_to 'Add new todo', new_to_do_path %>
+
+<ul>
+  <% @todos.each do |t| %>
+
+    <li>
+      <%= t.title %>
+      <%= link_to 'View todo', to_do_path(t) %>
+      <%= link_to 'Edit todo', edit_to_do_path(t) %>
+      <%= link_to 'Delete todo', t, method: :delete %>
+    </li>
+
+  <% end %>
+</ul>

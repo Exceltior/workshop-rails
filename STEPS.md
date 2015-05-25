@@ -26,3 +26,18 @@ Migrate database
 ```bash
 $ rake db:migrate
 ```
+
+## Step 2
+
+Create ToDo controller 
+```bash
+$ rails g controller ToDo 
+```
+
+Create ToDo CRUD views 
+```
+app/views/to_dos/index.html.erb
+app/views/to_dos/show.html.erb
+app/views/to_dos/new.html.erb
+app/views/to_dos/edit.html.erb
+```
