@@ -41,3 +41,20 @@ app/views/to_dos/show.html.erb
 app/views/to_dos/new.html.erb
 app/views/to_dos/edit.html.erb
 ```
+
+## Step 3
+
+Create User model
+```bash
+$ rails g model user email 
+```
+
+Create a migration to change ToDos table
+```bash
+$ rails g migration AddUserIDToToDos 
+```
+
+Migrate database
+```bash
+$ rake db:migrate
+```
