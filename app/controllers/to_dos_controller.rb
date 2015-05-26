@@ -1,7 +1,7 @@
 class ToDosController < ApplicationController
 
   def index
-    @todos = ToDo.all
+    @todos = current_user.to_dos 
   end
 
   def show 
@@ -13,7 +13,7 @@ class ToDosController < ApplicationController
   end
 
   def create
-    @todo = ToDo.new(to_do_params)
+    @todo = current_user.to_dos.build(to_do_params) 
 
     if @todo.save
       redirect_to @todo
@@ -38,7 +38,7 @@ class ToDosController < ApplicationController
 
   def destroy
     ToDo.find(params[:id]).destroy!
-    redirect_to todo_index_path
+    redirect_to todos_path
   end
 
   private

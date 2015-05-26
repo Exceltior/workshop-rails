@@ -58,3 +58,21 @@ Migrate database
 ```bash
 $ rake db:migrate
 ```
+
+## Step 4
+
+Add `gem 'devise'` to Gemfile
+```bash
+$ bundle install
+```
+
+Install and configure devise
+```bash
+$ rails generate devise:install 
+
+$ rails generate devise:views
+
+$ rails generate devise User
+
+$ rake db:migrate
+```
